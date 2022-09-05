@@ -1664,3 +1664,28 @@ input, select, textarea {
 .changecolor:hover {
 	color: #5F5F5F;
 }
+
+.resumepdf {
+	width: 315px;
+	height: 77vh;
+}
+
+.resumewrapper {
+	margin-top: -50px;
+}
+
+.ecommerceimage {
+	width: 40vw;
+}
+
+.ecobinaryimage {
+	width: 20vw;
+}
+
+.bankingimage {
+	width: 40vw;
+}
+
+.contactimage {
+	width: 40vw;
+}

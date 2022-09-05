@@ -45,14 +45,15 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">About Me</h2>
-							
+
 								<p>I am Elliott Phillips, a Full-Stack Software Developer.</p>
 								<p>I am a second-year at the University of Cincinnati, studying Information Technology with a focus in Software Application Development. My main tech stack is Spring Boot, ReactJS, and MySQL, but I can also use the .Net 6 stack. I am also a Brazilian Jiu-Jitsu National Silver Medalist.</p>
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<embed src="images/OldResume.pdf" width="500px" height="750px">
+							<article id="work" class="resumewrapper">
+								<object class="resumepdf" data="images/OldResume.pdf" type="application/pdf"></object>
+								<!-- <embed class="resumepdf" src="images/OldResume.pdf" width="500px" height="750px"> -->
 							</article>
 
 						<!-- Elements -->
@@ -60,7 +61,8 @@
 								<h2 class="major">Projects</h2>
 								<h3 class="major changecolor"><a href="https://github.com/Elliott03/Ecommerce">Ecommerce Site</a></h3> 
 								<h4>An ecommerce website written in ReactJS, Spring Boot, MySQL, Javascript, Java, and Hibernate</h4>
-								<img src="images/ecommerce.PNG" width="500px" height="280px">
+								<!-- 500 x 280 -->
+								<img class="ecommerceimage"src="images/ecommerce.PNG">
 								<h4>Includes: </h4>
 								<ul>
 									<li>Signing Up</li>
@@ -73,7 +75,7 @@
 
 								<h3 class="major changecolor"><a href="https://github.com/Elliott03/EcoBinary">EcoBinary</a></h3> 
 								<h4>An Android app and API that allows executing commands on Windows/Linux from an Android, written in Spring Boot and Java</h4>
-								<img src="images/ecobinary.PNG">
+								<img class="ecobinaryimage" src="images/ecobinary.PNG">
 								<h4>Includes:</h4>
 								<ul>
 									<li>The ProcessBuilder Java Class to Execute the Commands</li>
@@ -82,7 +84,9 @@
 								</ul>
 								<h3 class="major changecolor"><a href="https://github.com/Elliott03/AdvancedBanking">Banking Program</a></h3> 
 								<h4>A banking website written in ReactS, Spring Boot, MySQL, Javascript, Java, and Hibernate</h4>
-								<img src="images/advancedbanking.PNG" width="500px" height="280px">
+
+								<!-- 500 x 280  -->
+								<img class="bankingimage"src="images/advancedbanking.PNG">
 								<h4>Includes:</h4>
 								<ul>
 									<li>Signing Up</li>
@@ -92,7 +96,7 @@
 								</ul>
 								<h3 class="major changecolor"><a href="https://github.com/Elliott03/ContactManager">Contact Manager</a></h3> 
 								<h4>A contact management Java program with a Swing GUI</h4>
-								<img src="images/contactmanager.PNG">
+								<img class="contactimage"src="images/contactmanager.PNG">
 								<h4>Includes:</h4>
 								<ul>
 									<li>Adding Contacts</li>

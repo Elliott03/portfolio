@@ -20,16 +20,16 @@
             </div>
             <ul class="middle">
                 <li class="nav">
-                    <h4>About</h4>
+                    <a href="#main-description">About</a>
                 </li>
                 <li class="nav">
-                    <h4>Experience</h4>
+                    <a href="#experience">Experience</a>
                 </li>
                 <li class="nav">
-                    <h4>Projects</h4>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li class="nav">
-                    <h4>Course Experience</h4>
+                    <a href="#course-experience">Course Experience</a>
                 </li>
             </ul>
             <div class="bottom">
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="right">
-            <p class="main-description">
+            <p id="main-description" class="main-description">
                 I'm an IT student on the software development track at the <span>University of Cincinnati</span>, currently set to graduate in <span>Spring 2025</span>.
                 I have experience developing full-stack applications, native mobile applications, cross-platform applications, managing databases, 
                 and designing complex systems.
@@ -51,8 +51,8 @@
                 Outside of class projects, I created UCReviews, a responsive full-stack application built in <span>Angular</span>, <span>.NET Core</span>, and <span>MSSQL</span> that lets UC students review school housing.
                 I also wrote EcoBinary, a native iOS and Android application built in <span>Kotlin</span> with <span>Jetpack Compose</span>, <span>Swift</span> with <span>SwiftUI</span>, and <span>Golang</span> that lets users execute bash commands on their computer from their phone.
             </p>
-            <div class="experience">
-                <div class="work">
+            <div id="experience" class="experience">
+                <a href="https://www.progressive.com/" class="work">      
                     <h5>May 2024 &mdash; Aug 2024</h5>
                     <img src="images/progressive.jpg" alt="Progressive Insurance">
                     <div class="work-details">
@@ -67,8 +67,8 @@
                             <li>MSSQL</li>
                         </ul>
                     </div>
-                </div>
-                <div class="work">
+                </a>
+                <a href="https://www.cincinnatichildrens.org/" class="work">
                     <h5>Aug 2023 &mdash; Dec 2023</h5>
                     <img src="images/cchmc.png" alt="Cincinnati Children's Hospital">
                     <div class="work-details">
@@ -94,8 +94,8 @@
                             <li>MSSQL</li>
                         </ul>
                     </div>
-                </div>
-                <div class="work">
+                </a>
+                <a href="https://www.emerson.com/en-us/global" class="work">
                     <h5>Jan 2023 &mdash; May 2023</h5>
                     <img src="images/emerson.webp" alt="Emerson">
                     <div class="work-details">
@@ -103,8 +103,8 @@
                         <h2>Copeland</h2>
                         <ul class="bullet-points">
                             <li>Developed an IOS/Android app feature in Kotlin with Jetpack Compose and Swift with SwiftUI
-                                 that utilizes OCR technology through Azure’s Computer Vision API to allow users to take 
-                                 a picture of a compressor label to identify counterfeits.</li>
+                                that utilizes OCR technology through Azure’s Computer Vision API to allow users to take 
+                                a picture of a compressor label to identify counterfeits.</li>
                                 <br />
                             <li>Developed an API in Flask and Python that extracts key information from Invoice PDF’s 
                                 through Regular Expression Patterns, and uses that to identify counterfeits and verify 
@@ -124,7 +124,105 @@
                             <li>Azure</li>
                         </ul>
                     </div>
+                </a>
+            </div>
+            <a class="resume-link" href="Elliott_Phillips_Software_Engineer_Resume.pdf">View Full Resume</a>
+            <div id="projects">
+                <a href="https://github.com/Elliott03/UCReviews" class="individual-project">
+                    <h5>Aug 2023 &mdash; CURRENT</h5>
+                    <img alt="uc reviews" src="images/ucreviews.png">
+                    <div class="project-details">
+                        <h1>UCReviews</h1>
+                        <img src="images/ucreviews-1.png"/>
+                        <img src="images/ucreviews-3.png"/>
+
+                        <ul class="bullet-points">
+                            <li>Developed a full-stack web application using Angular, Typescript, C#, ASP.NET Core, and MSSQL to facilitate
+                                student ratings and reviews of University of Cincinnati dorms, with over 140 registered users.</li>
+                            <br />
+                            <li>Implemented secure authentication, using hashed and salted randomly generated passwords and JSON Web
+                                Tokens.</li>
+                            <br />
+                            <li>Designed and Developed a database in 4th normal form to eliminate data redundancy.</li>
+                            <br />
+                            <li>Designed and developed an intuitive user interface using Angular and Typescript for seamless user experience.</li>
+                            <br />
+                            <li>Deployed the web app on Heroku, with the database running on a ClearDB instance.</li>
+                        </ul>
+                        <ul class="skills-used">
+                            <li>Typescript</li>
+                            <li>Angular</li>
+                            <li>C#</li>
+                            <li>.NET Core</li>
+                            <li>MSSQL</li>
+                            <li>Heroku</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="https://github.com/Elliott03/EcoBinary" class="individual-project">
+                    <h5>Jan 2024 &mdash; April 2024</h5>
+                    <img alt="eco binary" src="images/ecobinary.png">
+                    <div class="project-details">
+                        <h1>EcoBinary</h1>
+                        <video width="320" height="240" controls>
+                            <source src="videos/ecobinary.mp4" type="video/mp4">
+                            Your browser does not support videos
+                        </video>
+                        <ul class="bullet-points">
+                            <li>Lets the user execute bash commands on their computer remotely from their phone.</li>
+                            <br />
+                            <li>Native iOS/Android app written in Kotlin with Jetpack Compose and Swift with SwiftUI.</li>
+                            <br />
+                            <li>User specifies a private IP address and port number to send the commands to.</li>
+                            <br />
+                            <li>The Go API executes the bash commands using the os/exec library and returns the results to the mobile app
+                                to be displayed.</li>
+                        </ul>
+                        <ul class="skills-used">
+                            <li>Swift</li>
+                            <li>Kotlin</li>
+                            <li>SwiftUI</li>
+                            <li>Jetpack Compose</li>
+                            <li>Golang</li>
+                            <li>Gin</li>
+                        </ul>
+                    </div> 
+                </a>
+            </div>
+            <h2 class="relevant-coursework-label">Relevant Coursework</h2>
+            <div id="course-experience">
+                <div class="school-year">
+                    <h3>2021 &mdash; 2022</h3>
+                    <ul>
+                        <li>Computer Networking</li>
+                        <li>System Administration</li>
+                        <li>Database Administration I</li>
+                        <li>Advanced Java Development</li>
+                        <li>Information Security</li>
+                    </ul>
                 </div>
+                <div class="school-year">
+                    <h3>2022 &mdash; 2023</h3>
+                    <ul>
+                        <li>Digital Media</li>
+                        <li>C# Programming</li>
+                        <li>Database Administration II</li>
+                        <li>UX Design</li>
+                        <li>Web Game Development</li>
+                    </ul> 
+                </div>
+                <div class="school-year">
+                    <h3>2023 &mdash; 2024</h3>
+                    <ul>
+                        <li>System Analysis & Design</li>
+                        <li>Network Infrastructure</li>
+                        <li>Web Server Development</li>
+                        <li>Mobile Development</li>
+                        <li>IT Management</li>
+                        <li>Enterprise Development</li>
+                    </ul> 
+                </div>
+
             </div>
         </div>
     </div>

@@ -31,6 +31,7 @@ h5 {
     opacity: .8;
     line-height: 1.5;
 }
+
 .wrapper {
     display: grid;
     grid-template-columns: 9fr 15fr;
@@ -66,6 +67,15 @@ h5 {
     padding: 0;
     list-style-type: none;
 }
+.middle li a {
+    font-family: "Montserrat", sans-serif;
+    color: #d6dbf1;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
 
 .right {
     grid-column: 2;
@@ -86,43 +96,45 @@ h5 {
     font-weight: bold;
 }
 
-.experience {
+.experience, #projects {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
 }
-.work {
+.work, .individual-project {
     display: flex;
     flex-direction: row;
     border-radius: 15px;
     padding: 10px;
+    text-decoration: none;
 }
 
 
-.work:hover {
+.work:hover, .individual-project:hover {
     background-color: #1c2853;
     cursor: pointer;
 }
 .work:hover .work-details h1 {
     color: #f5ae62;
 }
-.work h5 {
+.work h5, .individual-project h5 {
     font-size: 12px;
     white-space: nowrap;
     margin-top: 0;
 }
-.work img {
+.work img, .individual-project img {
     height: 50px;
     margin-left: 30px;
     margin-right: 10px;
 }
-.work-details {
+.work-details, .project-details {
     display: flex;
     flex-direction: column;
 }
 
-.work-details h1 {
+.work-details h1, .project-details h1 {
     font-size: 18px;
     transition: color 0.3s ease;
 }
@@ -135,7 +147,7 @@ h5 {
     margin-top: 0;
 }
 
-.work-details .bullet-points li {
+.bullet-points li {
     color: #d6dbf1;
     font-family: "Montserrat", sans-serif;
     line-height: 1.6; 
@@ -152,11 +164,7 @@ h5 {
     margin: 0;
     padding: 0;
 }
-.skills-used {
-    font-family: "Montserrat", sans-serif;
-    color:#f5ae62; 
-    list-style-type: none;
-}
+
 .skills-used li {
     display: inline-block;
     margin-right: 10px;
@@ -164,4 +172,46 @@ h5 {
     padding: 5px 8px 5px 8px;
     border-radius: 15px;
     background-color: rgba(218,119,13, .2);
+    font-family: "Montserrat", sans-serif;
+    color:#f5ae62; 
+    list-style-type: none;
+}
+.resume-link {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 26px;
+    margin-left: 50%;
+}
+.project-details img {
+    width: 240px;
+    height: 120px;
+    margin-bottom: 5px;
+}
+.relevant-coursework-label {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 26px; 
+}
+.school-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px white solid;
+}
+.school-year ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 15px;
+    background-color: rgba(22,155,167, .2); 
+    color: #44d4e6;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+}
+.school-year h3 {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-top: 0;
 }

@@ -31,7 +31,10 @@ h5 {
     opacity: .8;
     line-height: 1.5;
 }
-
+iframe {
+    border: none;
+    outline: none;
+}
 .wrapper {
     display: grid;
     grid-template-columns: 9fr 15fr;
@@ -224,4 +227,10 @@ h5 {
     font-size: 12px;
     white-space: nowrap;
     margin-top: 0;
+}
+
+.individual-blog-link {
+    height: 60px;
+    width: 400px;
+    color: #fff;
 }
